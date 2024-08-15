@@ -1,7 +1,7 @@
 # @@@SNIPSTART python-project-template-run-workflow-hello-world
 import asyncio
 
-from run_worker import SayHello
+from run_worker import GeoCode
 from temporalio.client import Client
 
 
@@ -11,10 +11,10 @@ async def main():
 
     # Execute a workflow
     location_from_user = await client.execute_workflow(
-        SayHello.run, id="hello-workflow", task_queue="hello-task-queue"
+        GeoCode.run, id="hello-workflow", task_queue="hello-task-queue"
     )
 
-    print(f"Result: {location_from_user}")
+    print(f"Lat long: {location_from_user}")
 
 
 if __name__ == "__main__":
