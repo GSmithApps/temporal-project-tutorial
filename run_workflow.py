@@ -10,11 +10,11 @@ async def main():
     client = await Client.connect("localhost:7233")
 
     # Execute a workflow
-    result = await client.execute_workflow(
+    location_from_user = await client.execute_workflow(
         SayHello.run, id="hello-workflow", task_queue="hello-task-queue"
     )
 
-    print(f"Result: {result}")
+    print(f"Result: {location_from_user}")
 
 
 if __name__ == "__main__":
