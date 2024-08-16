@@ -1,4 +1,4 @@
-# @@@SNIPSTART python-project-template-run-workflow-hello-world
+# @@@SNIPSTART python-geocode-tutorial-run-workflow
 import asyncio
 
 from run_worker import GeoCode
@@ -10,11 +10,11 @@ async def main():
     client = await Client.connect("localhost:7233")
 
     # Execute a workflow
-    location_from_user = await client.execute_workflow(
-        GeoCode.run, id="hello-workflow", task_queue="hello-task-queue"
+    lat_long = await client.execute_workflow(
+        GeoCode.run, id="geocode-workflow", task_queue="geocode-task-queue"
     )
 
-    print(f"Lat long: {location_from_user}")
+    print(f"Lat long: {lat_long}")
 
 
 if __name__ == "__main__":

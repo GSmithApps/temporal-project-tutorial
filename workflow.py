@@ -1,4 +1,4 @@
-# @@@SNIPSTART python-project-template-workflows
+# @@@SNIPSTART python-geocode-tutorial-workflow
 from datetime import timedelta
 from temporalio import workflow
 
@@ -22,11 +22,11 @@ class GeoCode:
 
         query_params = QueryParams(api_key=api_key_from_user, address=address_from_user)
 
-        response_from_geoapify = await workflow.execute_activity(
+        lat_long = await workflow.execute_activity(
             get_lat_long, query_params, start_to_close_timeout=timedelta(seconds=5)
         )
 
-        return response_from_geoapify
+        return lat_long
 
 
 # @@@SNIPEND

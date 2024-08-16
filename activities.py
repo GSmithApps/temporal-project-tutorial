@@ -1,4 +1,4 @@
-# @@@SNIPSTART python-project-template-activities
+# @@@SNIPSTART python-geocode-tutorial-activity-1
 from temporalio import activity
 
 @activity.defn
@@ -11,7 +11,7 @@ async def get_address_from_user() -> str:
 
 # @@@SNIPEND
 
-# @@@SNIPSTART python-project-template-activities
+# @@@SNIPSTART python-geocode-tutorial-activity-2
 import requests
 from dataclasses import dataclass
 
