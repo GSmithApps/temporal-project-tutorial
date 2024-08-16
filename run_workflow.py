@@ -1,7 +1,7 @@
 # @@@SNIPSTART python-geocode-tutorial-run-workflow
 import asyncio
 
-from run_worker import GeoCode
+from workflow import GeoCode
 from temporalio.client import Client
 
 
