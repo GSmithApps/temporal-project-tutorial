@@ -9,12 +9,13 @@ Some examples of the other code repositories in the series are the following:
 - https://github.com/temporalio/data-pipeline-project-python
 - https://github.com/temporalio/email-subscription-project-python
 
-Hopefully this repository can be moved to the Temporal project as well
+Hopefully this repository can be moved to the Temporal organization as well
 and be housed alongside these others.
 
 And the narrative tutorial will hopefully be a part of the single repository
 that holds all the other narrative tutorials, but for now it is in a fork at
-[geocoding tutorial](https://github.com/GSmithApps/temporal-learning/tree/project-based-tutorial-python/docs/tutorials/python).
+[geocoding tutorial](https://github.com/GSmithApps/temporal-learning/tree/project-based-tutorial-python/docs/tutorials/python)
+and has a [draft PR](https://github.com/temporalio/temporal-learning/pull/295).
 
 The tutorial, when rendered, looks like
 
