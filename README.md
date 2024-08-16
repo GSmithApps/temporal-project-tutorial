@@ -1,7 +1,7 @@
 This is a tutorial to display some of Temporal's functionality.
 Specifically it is a business process application, that is part
 of the Python Project-Based Tutorial Series.  In this series,
-each tutorial has (1) a repository in [Temporal organization](https://github.com/temporalio) that holds the code, and (2) a narrative
+each tutorial has (1) a repository in the [Temporal organization](https://github.com/temporalio) that holds the code, and (2) a narrative
 tutorial that goes with the code -- all of live in a single repository.
 
 Some examples of the other code repositories in the series are the following:
