@@ -2,11 +2,13 @@
 from temporalio import activity
 
 
+# Tells Temporal that this is an Activity
 @activity.defn
 async def get_api_key_from_user() -> str:
     return input("Please give your API key: ")
 
 
+# Tells Temporal that this is an Activity
 @activity.defn
 async def get_address_from_user() -> str:
     return input("Please give an address: ")

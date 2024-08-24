@@ -13,12 +13,21 @@ with workflow.unsafe.imports_passed_through():
 
 _TIMEOUT_5_MINS = 5 * 60
 
-
+# Decorator for the workflow class.
+# This must be set on any registered workflow class.
 @workflow.defn
 class GeoCode:
+    """The Workflow. Orchestrates the Activities."""
 
+    # Decorator for the workflow run method.
+    # This must be set on one and only one async method defined on the same class as @workflow.defn
     @workflow.run
     async def run(self) -> list:
+        """
+        The run method of the Workflow.
+        
+        Coordinates the Activities.
+        """
 
         api_key_from_user = await workflow.execute_activity(
             get_api_key_from_user,
