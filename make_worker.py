@@ -12,8 +12,10 @@ def make_worker(client: Client):
         client,
         task_queue="geocode-task-queue",
         workflows=[GeoCode],
-        activities=[get_address_from_user, get_api_key_from_user, get_lat_long]
+        activities=[get_address_from_user, get_api_key_from_user, get_lat_long],
     )
 
     return worker
+
+
 # @@@SNIPEND
